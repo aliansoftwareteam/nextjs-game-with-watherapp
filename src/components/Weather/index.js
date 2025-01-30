@@ -10,7 +10,6 @@ import logoWeather from "./components/logo-weather.json";
 import { Search } from '@mui/icons-material';
 
 
-
 const App = (props) => {
   const [city, setCity] = useState("");
   const [invalidCity, setInvalidCity] = useState(false);
@@ -64,7 +63,7 @@ const App = (props) => {
         </form>
       </Grid>
 
-     <div>
+    <div>
       {/* Mostra il messaggio di errore se l'input è vuoto */}
       {invalidCity && <p>Please enter a city</p>}
       {/* Mostra il messaggio di caricamento durante il recupero dei dati */}
